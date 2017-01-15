@@ -15,7 +15,7 @@ var y = d3.scaleRadial()
     .range([innerRadius, outerRadius]);
 
 var z = d3.scaleOrdinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+    .range(["#B9006E", "#CCC51C", "#F05A28", "#2A0256", "#a05d56", "#FFE600", "#ff8c00"]);
 
 d3.csv("eric_data.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
@@ -24,7 +24,11 @@ d3.csv("eric_data.csv", function(d, i, columns) {
 }, function(error, data) {
   if (error) throw error;
 
-  data.sort(function(a, b) { return b[data.columns[1]] / b.total - a[data.columns[1]] / a.total; });
+  // function comparison_function (a, b) { 
+  //   return a["index"] - b["index"]
+  // }
+  // data.sort(comparison_function);
+
   x.domain(data.map(function(d) { return d.State; }));
   z.domain(data.columns.slice(1));
 
