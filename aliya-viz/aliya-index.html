@@ -16,7 +16,7 @@
 			<header>
 			
 				<h1><strong>Has the outcome of a traffic stop by race changed over the years?</strong></h1>
-				<p><strong>Dummy Data! Real data not yet incorporated!<strong></p>
+				<p><strong>This is the real data but only by year - will try to redo with month<strong></p>
 				
 			</header>
 			
@@ -64,7 +64,7 @@
 							*/
 							data.forEach(function(d) {
 								for (var prop in d) {
-									if (d.hasOwnProperty(prop)) {
+									if (d.hasOwnProperty(prop) && prop != 'Year') {
 										d[prop] = parseFloat(d[prop]);
 										
 										if (d[prop] > maxDataPoint) {
