@@ -3,8 +3,8 @@
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height"),
-    innerRadius = 180,
-    outerRadius = Math.min(width, height) / 2 - 6,
+    innerRadius = 180 - 00,
+    outerRadius = (Math.min(width, height) / 2 - 6) - 30,
     g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 var x = d3.scaleBand()
@@ -51,12 +51,12 @@ d3.csv("eric_data.csv", function(d, i, columns) {
           .padAngle(0.01)
           .padRadius(innerRadius));
 
-  var label = g.append("g")
-    .selectAll("g")
-    .data(data)
-    .enter().append("g")
-      .attr("text-anchor", "middle")
-      .attr("transform", function(d) { return "rotate(" + ((x(d.State) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)"; });
+ var label = g.append("g")
+   .selectAll("g")
+   .data(data)
+   .enter().append("g")
+     .attr("text-anchor", "middle")
+     .attr("transform", function(d) { return "rotate(" + ((x(d.State) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)"; });
 
   label.append("line")
       .attr("x2", -5)
