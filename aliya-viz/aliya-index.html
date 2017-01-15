@@ -64,7 +64,7 @@
 							*/
 							data.forEach(function(d) {
 								for (var prop in d) {
-									if (d.hasOwnProperty(prop)) {
+									if (d.hasOwnProperty(prop) && prop != 'Year') {
 										d[prop] = parseFloat(d[prop]);
 										
 										if (d[prop] > maxDataPoint) {
