@@ -1,9 +1,18 @@
+body{
+	font-family: 'Lato', Arial, serif;
+	background: #ddd url(images/bg.jpg) repeat top left;
+	font-weight: 300;
+	font-size: 14px;
+	color: #666;
+	-webkit-font-smoothing: antialiased;
+}
+
 h1 {
 	margin: 0;
 	text-align: center;
 	padding: 20px;
-	color: #00539F;
-	text-shadow: 1px 1px 1px black;
+	color: #666;
+	text-shadow: 2px 2px 2px white;
 }
 
 svg {
