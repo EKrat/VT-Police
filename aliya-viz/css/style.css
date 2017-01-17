@@ -45,15 +45,15 @@ g.context g.axis line {
 	stroke-opacity: .1;
 }
 
-g.black path.chart {
+g.white path.chart {
 	fill: rgba(127,201,127,0.5);
 }
 
-g.hispanic path.chart {
+g.black path.chart {
 	fill: rgba(127,201,174,0.5);
 }
 
-g.native path.chart {
+g.hispanic path.chart {
 	fill: rgba(127,183,201,0.5);
 }
 
@@ -61,7 +61,7 @@ g.asian path.chart {
 	fill: rgba(127,130,201,0.5);
 }
 
-g.unknown path.chart {
+g.other path.chart {
 	fill: rgba(171,127,201,0.5);
 }
 
