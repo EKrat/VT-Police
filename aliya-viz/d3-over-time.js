@@ -8,7 +8,7 @@
 												.attr("width", width + margin.left + margin.right)
 												.attr("height", (height + margin.top + margin.bottom));
 												
-						d3.csv('aliya_data.csv', createChart);
+						d3.csv('aliya-viz/aliya_data.csv', createChart);
 						
 						function createChart(data){
 							var countries = [];
