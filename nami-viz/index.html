@@ -32,7 +32,9 @@ var width = 960,
     height = 500,
     radius = Math.min(width, height) / 2;
 
-var color = d3.scale.category20();
+var color = d3.scale.ordinal()
+  .domain(["searched", "not searched"])
+  .range(["#FFE600", "#3A0256"]);
 
 var pie = d3.layout.pie()
     .value(function(d) { return d.count; })
@@ -50,7 +52,7 @@ var svg = d3.select("body").append("svg")
 
 var path = svg.selectAll("path");
 
-d3.tsv("data.tsv", type, function(error, data) {
+d3.tsv("racesearchdata.tsv", type, function(error, data) {
   var regionsByFruit = d3.nest()
       .key(function(d) { return d.fruit; })
       .entries(data)
