@@ -22,8 +22,11 @@ var svg = d3.select("body").append("svg")
 
 var path = svg.selectAll("path");
 
-d3.tsv("nami-viz/racesearchdata.tsv", type, function(error, data) {
-  var regionsByFruit = d3.nest()
+
+
+/*d3.tsv("nami-viz/racesearchdata.tsv", type, function(error, data) { Professor, whe*/
+d3.tsv("https://raw.githubusercontent.com/EKrat/VT-Police-Backend/master/nami-viz/racesearchdata.tsv", type, function(error, data) {
+     var regionsByFruit = d3.nest()
       .key(function(d) { return d.fruit; })
       .entries(data)
       .reverse();

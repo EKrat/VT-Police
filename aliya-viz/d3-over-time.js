@@ -8,7 +8,9 @@ var svg = d3.select("#chart-container").append("svg")
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", (height + margin.top + margin.bottom));
 					
-d3.csv('aliya-viz/aliya_data.csv', createChart);
+/*d3.csv('aliya-viz/aliya_data.csv', createChart); turning off this call for now */
+/*"https://raw.githubusercontent.com/dmil/example-backend/master/bubble-chart/data.csv"*/
+d3.csv("https://raw.githubusercontent.com/EKrat/VT-Police-Backend/master/aliya-viz/aliya_data.csv", createChart);
 
 function createChart(data){
 var countries = [];
