@@ -1,6 +1,7 @@
 body{
 	width: 1100px;
 	margin: 0 auto;
+	position: relative; /* added to check if puts nami viz in right place */
 	font-family: 'Lato', Arial, serif;
 	background: #ddd url(../images/bg.jpg) repeat top left;
 	font-weight: 300;
@@ -9,6 +10,20 @@ body{
 	padding: 20px 20px 20px 20px;
 	-webkit-font-smoothing: antialiased;
 }
+
+/* added this to try to get nami viz in right place */
+
+form {
+  position: absolute;
+  right: 10px;
+
+} 
+
+input {
+  margin: 0 7px;
+}
+
+/* end of stuff added this to try to get nami viz in right place */
 
 a{
 	color: #555;
