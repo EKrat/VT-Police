@@ -1,5 +1,5 @@
 body{
-	width: 1000px;
+	width: 1100px;
 	margin: 0 auto;
 	font-family: 'Lato', Arial, serif;
 	background: #ddd url(../images/bg.jpg) repeat top left;
@@ -23,7 +23,7 @@ ul.nav {
     background:#3A0256; /* you can change the backgorund color here. */
     font-family:Arial, Helvetica, sans-serif;
     font-size:13px;
-    width: 1000px;
+    width: 1100px;
 }
 ul.nav li {
     border-right:1px solid #D3D3D3; /* you can change the border color matching to your background color */
