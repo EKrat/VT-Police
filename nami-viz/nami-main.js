@@ -22,7 +22,7 @@ var svg = d3.select("body").append("svg")
 
 var path = svg.selectAll("path");
 
-d3.tsv("racesearchdata.tsv", type, function(error, data) {
+d3.tsv("nami-viz/racesearchdata.tsv", type, function(error, data) {
   var regionsByFruit = d3.nest()
       .key(function(d) { return d.fruit; })
       .entries(data)
