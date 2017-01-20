@@ -23,7 +23,7 @@ ul.nav {
     background:#3A0256; /* you can change the backgorund color here. */
     font-family:Arial, Helvetica, sans-serif;
     font-size:13px;
-    width: 1100px;
+    width: 1095px;
 }
 ul.nav li {
     border-right:1px solid #D3D3D3; /* you can change the border color matching to your background color */
@@ -31,7 +31,7 @@ ul.nav li {
 }
 ul.nav a {
     display:block;
-    padding:0 32px;
+    padding:0 42px;
     color: #FFFFFF;
     text-decoration:none;
 }
