@@ -8,7 +8,9 @@ var svg = d3.select("#chart-container").append("svg")
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", (height + margin.top + margin.bottom));
 					
-d3.csv('aliya-viz/aliya_data.csv', createChart);
+/*d3.csv('aliya-viz/aliya_data.csv', createChart); turning off this call for now */
+/*"https://raw.githubusercontent.com/dmil/example-backend/master/bubble-chart/data.csv"*/
+d3.csv("https://raw.githubusercontent.com/EKrat/VT-Police-Backend/master/aliya-viz/aliya_data.csv", createChart);
 
 function createChart(data){
 var countries = [];
@@ -68,6 +70,7 @@ for(var i = 0; i < countriesCount; i++){
 
 /* Let's create the context brush that will 
 		let us zoom and pan the chart */
+
 var contextXScale = d3.time.scale()
 											.range([0, contextWidth])
 											.domain(charts[0].xScale.domain());	
@@ -104,13 +107,19 @@ context.append("g")
 										.attr("y", 0)
 										.attr("height", contextHeight);
 
+/*
 context.append("text")
 					.attr("class","instructions")
 					.attr("transform", "translate(0," + (contextHeight + 20) + ")")
-					.text('Click and drag above to zoom / pan the data');
+					.text('Use above window to zoom in on the data'); 
+*/
 					
 function onBrush(){
+
+
 	/* this will return a date range to pass into the chart object */
+
+
 	var b = brush.empty() ? contextXScale.domain() : brush.extent();
 	for(var i = 0; i < countriesCount; i++){
 		charts[i].showOnly(b);
@@ -130,6 +139,8 @@ this.margin = options.margin;
 this.showBottomAxis = options.showBottomAxis;
 
 var localName = this.name;
+
+
 
 /* XScale is time based */
 this.xScale = d3.time.scale()

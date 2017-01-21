@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title> Testing the Visual</title>
+  <title> Arrests by Race</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="aliya-viz/aliya-css.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css' />
@@ -12,9 +12,17 @@
 </head>
 <body>
 
+ <ul class="nav">
+    <li><a href="index.html"> Introduction </a></li>
+    <li><a href="eric.html"> Stops by Time of Day </a></li>
+    <li><a href="index.html">  Race of Traffic Stops over Time </a></li>
+    <li><a href="aliya.html"> Arrests by Race </a></li>
+    <li><a href="nami.html"> Impact of Race on Search Decision </a></li>
+  </ul>
+
   <header>       
     <h1><strong>Has the outcome of a traffic stop by race changed over the years?</strong></h1>
-    <p><strong>This is the real data but only by year - will try to redo with month<strong></p>
+    <p><strong>This data shows the outcome of a traffic stop by race, specifically the percent of arrests by race. In other words, once an individual was pulled over, what percentage within their racial group was then arrested as the next step. You would hope that the rate of arrests would be the same within each racial group. What we see here is that while the rates of arrest have fluctuated over time, that there are still discrepancies.<strong></p>
   </header>
 
   <!-- Aliya's Visualization --> 
@@ -29,9 +37,9 @@
 
   <!-- Source of Data --> 
 
-  <header> 
-    <center><p><strong>This data was collected from <a href="https://data.vermont.gov/Public-Safety/Vermont-State-Police-Traffic-Stops-2010-2015-/hkee-cjs6?category=Public-Safety&view_name=Vermont-State-Police-Traffic-Stops-2010-2015-">the State of Vermont's Data Portal</a></strong></p></center>
-  </header>
+  <p><strong> Notes on the data: This Race data was determined by the police officer. Omitted from this data were stops that did not include race data or listed the race as unknown or Native American. The original data can be found at <a href="https://data.vermont.gov/Public-Safety/Vermont-State-Police-Traffic-Stops-2010-2015-/hkee-cjs6?category=Public-Safety&view_name=Vermont-State-Police-Traffic-Stops-2010-2015-">data.vermont.gov</a>.</strong></p>
+
+  <p><strong> Notes on the visualization: This visualization has been adapted from <a href="https://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/"> this D3.js tutorial</a> to fit this dataset. </strong></p>
 
 </body>
 </html>

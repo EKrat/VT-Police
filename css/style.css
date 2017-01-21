@@ -1,15 +1,59 @@
 body{
+	width: 1100px;
+	margin: 0 auto;
+	position: relative; /* added to check if puts nami viz in right place */
 	font-family: 'Lato', Arial, serif;
 	background: #ddd url(../images/bg.jpg) repeat top left;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 16px;
 	color: #888;
+	padding: 20px 20px 20px 20px;
 	-webkit-font-smoothing: antialiased;
 }
+
+/* added this to try to get nami viz in right place */
+
+form {
+  position: absolute;
+  right: 10px;
+
+} 
+
+input {
+  margin: 0 7px;
+}
+
+/* end of stuff added this to try to get nami viz in right place */
 
 a{
 	color: #555;
 	text-decoration: none;
+}
+
+ul.nav {
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:36px; line-height:36px;
+    background:#3A0256; /* you can change the backgorund color here. */
+    font-family: 'Lato', Arial, serif;
+    font-weight: 700;
+    font-size:13px;
+    width: 1097px;
+}
+ul.nav li {
+    border-right:1px solid #D3D3D3; /* you can change the border color matching to your background color */
+    float:left;
+}
+ul.nav a {
+    display:block;
+    padding:0 43px;
+    color: #FFFFFF;
+    text-decoration:none;
+}
+ul.nav a:hover,
+ul.nav li.current a {
+    background:#B9006E;
 }
 
 .container{
