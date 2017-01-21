@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-
+	<title>Stops by Time</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="eric-viz/eric-css.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -13,16 +13,15 @@
     <li><a href="eric.html"> Stops by Time of Day </a></li>
     <li><a href="index.html">  Race of Traffic Stops over Time </a></li>
     <li><a href="aliya.html"> Arrests by Race </a></li>
-    <li><a href="index.html"> Impact of Race on Search Decision </a></li>
+    <li><a href="nami.html"> Impact of Race on Search Decision </a></li>
   </ul>
 
 	<!-- Eric's Visualization -->
 
 	<header>
-	<h1><strong> Vermont State Police Traffic Stop Race Data </strong></h1>
-	<p><strong> In 2010, the Vermont State Police began collecting race data on all their traffic stops.  Encompassing 6 years of traffic stop data, the visualization tools on this website can help us understand if and how race play into their decisions when dealing with motorists.</strong></p>
-	<h2><strong> Vermont State Police's 2010-2015 Traffic Stop Racial Composition sorted by hour: </strong></h2>
-
+	<h1><strong> How Time of Day Affects Racial Composition of Traffic Stops </strong></h1>
+	<p><strong> Accessing six years of data, this visual shows the racial composition of traffic stops for each of the 24 hours in a day.  Each race is displayed as its proportion of all the traffics stops that hour.  One would hope for race to not factor into the decision to pull over a car.  What we see here is a noticeable increase of minority traffics stops during the hours that year-round would most difficult for officers to perceive driver race.</strong></p>
+	
 	</header>
 
 	<!-- svg ": center;" in css isn't working, currently have it in eric-vis/eric-css.css-->
@@ -31,10 +30,12 @@
 	<script src="eric-viz/d3-scale-radial.js"></script>
 	<script src="eric-viz/draw.js"></script>
 
-	<p><strong> This visualization shows that during the year-round consistently dark hours, minority drivers make up a larger percentage of the traffic stops.  One could conclude that minority drivers drive significantly more during those hours, working evening shifts.  One would have to consider that other side of that work commute would have to come within about 8 hours and within the daylight hours and that it would be more diffused, half before and half after.  As Vermont State Troopers watch cars drive past on the highway, frequently in excess of 65 miles an hour, it would be more difficult to recognize a driver’s race in the dark.  Does that mean that since Troopers started noting race on their traffic stops, they pull over more minorities when they can’t see the driver’s race and less when they can? -Team, does anyone had other thougths on this?</strong></p>
+	<p><strong> Notes on the data: This Race data was determined by the police officer.  Omitted from this data were stops that were not initiated by the police officer, accidents for instance.  Also, stops that did not include race data were excluded.  The original data can be found at <a href="https://data.vermont.gov/Public-Safety/Vermont-State-Police-Traffic-Stops-2010-2015-/hkee-cjs6?category=Public-Safety&view_name=Vermont-State-Police-Traffic-Stops-2010-2015-">data.vermont.gov</a>.</strong>.</p>
+
+	<p><strong> Notes on the visualization: <a href="http://bl.ocks.org/mbostock/8d2112a115ad95f4a6848001389182fb">This visualization</a> has been adapted from Mike Bostocks <a href="http://bl.ocks.org/mbostock">bl.ocks.org</a> to fit this dataset.</strong></p>
 
 	<header> 
-    <center><p><strong>This data was collected from <a href="https://data.vermont.gov/Public-Safety/Vermont-State-Police-Traffic-Stops-2010-2015-/hkee-cjs6?category=Public-Safety&view_name=Vermont-State-Police-Traffic-Stops-2010-2015-">the State of Vermont's Data Portal</a></strong></p></center>
+    <!--<center><p><strong>This data was collected from <a href="https://data.vermont.gov/Public-Safety/Vermont-State-Police-Traffic-Stops-2010-2015-/hkee-cjs6?category=Public-Safety&view_name=Vermont-State-Police-Traffic-Stops-2010-2015-">the State of Vermont's Data Portal</a></strong></p></center> keep this link dead for now as we decide how we want the attribution to look-->
   	</header>
 
 

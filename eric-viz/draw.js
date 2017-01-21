@@ -17,7 +17,7 @@ var y = d3.scaleRadial()
 var z = d3.scaleOrdinal()
     .range(["#B9006E", "#FFE600", "#F05A28", "#2A0256", "#a05d56", "#CCC51C", "#ff8c00"]);
 
-d3.csv("eric-viz/eric_data.csv", function(d, i, columns) {
+d3.csv("https://raw.githubusercontent.com/EKrat/VT-Police-Backend/master/eric-viz/eric_data.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
   d.total = t;
   return d;

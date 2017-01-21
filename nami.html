@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title> Donut Chart </title>
+
+  <meta charset="UTF-8" />
+  <title> Search Decisions </title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="nami-viz/nami-styles.css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css' />
 
 </head>
 
 <body>
 
-<h1>How Race Affects Likelihood of Search</h1>
-<h3> Between 2010 and 2015, the Vermont State Police stopped upwards of 280,000 cars. The chart below shows the proportion of searches performed, based on the race of the person stopped.</h3>
+ <ul class="nav">
+    <li><a href="index.html"> Introduction </a></li>
+    <li><a href="eric.html"> Stops by Time of Day </a></li>
+    <li><a href="index.html">  Race of Traffic Stops over Time </a></li>
+    <li><a href="aliya.html"> Arrests by Race </a></li>
+    <li><a href="nami.html"> Impact of Race on Search Decision </a></li>
+  </ul>
 
+<header>       
+    <h1><strong>How Race Affects Likelihood of Search</strong></h1>
+    <p><strong>Between 2010 and 2015, the Vermont State Police stopped upwards of 280,000 cars. The chart below shows the proportion of searches performed, based on the race of the person stopped.<strong></p>
+  </header>
 
-<form></form>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="nami-viz/nami-main.js"></script>
-
-
-<h4>Notes on the data: Race was determined by the police officer. Omitted from this visualization are instances when race was listed as "unknown" or when no race code was used. Searches include those with and without warrant, as well as passenger searches. The original data set can be found at <a href="https://data.vermont.gov/Public-Safety/Vermont-State-Police-Traffic-Stops-2010-2015-/hkee-cjs6/data">data.vermont.gov</a>.</h4>
-<h5>Notes on the visualization: <a href="https://gist.github.com/mbostock/5682158">This visualization</a> has been adapted from Mike Bostock's <a href="bl.ocks.org">bl.ocks.org</a> to fit this dataset.</h5>
+  <form></form>
+	<script src="//d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="nami-viz/nami-main.js"></script>
+       
+    <p><strong>Notes on the data: Race was determined by the police officer. Omitted from this visualization are instances when race was listed as "unknown" or when no race code was used. Searches include those with and without warrant, as well as passenger searches. The original data can be found at <a href="https://data.vermont.gov/Public-Safety/Vermont-State-Police-Traffic-Stops-2010-2015-/hkee-cjs6?category=Public-Safety&view_name=Vermont-State-Police-Traffic-Stops-2010-2015-">data.vermont.gov</a>.<strong></p>
+    <p><strong>Notes on the visualization: <a href="https://gist.github.com/mbostock/5682158">This visualization</a> has been adapted from Mike Bostock's <a href="http://bl.ocks.org">bl.ocks.org</a> to fit this dataset.<strong></p>
 
 </body>
 </html>
-
 
