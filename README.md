@@ -1,6 +1,17 @@
 # VT-Police
 Traffic Stop Data Analysis 
 
+
+This was a project where we used Vermont State Police traffic stop race data from 2010-2015 as an exercise in using data visualizations.  This project involved coding in CSS, Java Script, Python, and HTML.
+
+Below is a brief list of the README file's contents:
+A. User Stories
+B. Scrum Meeting Summaries
+C. A burn-down chart
+
+
+*****************************************************************************************
+A.
 User Stories for Viewers:
 1
 As a: police officer
@@ -35,7 +46,8 @@ I want: to present data fairly
 So that: the information is not biased.  
 
 
-***************************************************************
+*******************************************************************************************
+B.
 Scrum meeting on 1/17/17 at 09:30AM:
 
 -Points accomplished since beginning:
@@ -134,6 +146,7 @@ Points remaining: 224
 
 
 **************************************************************************************************
+C.
 Burn-Down Chart:
 
 						1/17/17 @ 9:30AM     1/19/17 @ 9:30AM		1/19/17 @ End of Day
