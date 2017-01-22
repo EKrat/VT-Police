@@ -10,7 +10,7 @@ var svg = d3.select("#chart-container").append("svg")
 					
 /*d3.csv('aliya-viz/aliya_data.csv', createChart); turning off this call for now */
 /*"https://raw.githubusercontent.com/dmil/example-backend/master/bubble-chart/data.csv"*/
-d3.csv("https://raw.githubusercontent.com/EKrat/VT-Police-Backend/master/aliya-viz/aliya_data.csv", createChart);
+d3.csv("https://raw.githubusercontent.com/EKrat/VT-Police-Backend/master/george-viz/george_data.csv", createChart);
 
 function createChart(data){
 var countries = [];
@@ -34,7 +34,6 @@ var chartHeight = height * (1 / countriesCount);
 
 /* Let's make sure these are all numbers, 
 we don't want javaScript thinking it's text 
-
 Let's also figure out the maximum data point
 We'll use this later to set the Y-Axis scale
 */
@@ -226,3 +225,6 @@ Chart.prototype.showOnly = function(b){
 	this.chartContainer.select(".x.axis.top").call(this.xAxisTop);
 	this.chartContainer.select(".x.axis.bottom").call(this.xAxisBottom);
 }
+
+    Contact GitHub API Training Shop Blog About 
+
