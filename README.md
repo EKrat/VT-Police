@@ -8,6 +8,7 @@ Below is a brief list of the README file's contents:
 A. User Stories
 B. Scrum Meeting Summaries
 C. A burn-down chart
+D. Sprint Retrospective
 
 
 *****************************************************************************************
@@ -155,3 +156,28 @@ Points accomplished:	  		136					108						135
 ____________________________________________________________________________________________
 Points remaining:				342					346						224
 ____________________________________________________________________________________________
+
+
+***************************************************************************************************
+D.
+SPRINT RETRO:
+
+*Start Doing:*
+- create ideal timeline internal to sprint to help give more structure to the project
+- make backlog on Trello more dynamic to reflect changing priorities and tasks as the project moves forward
+- preempt code conflicts / expect complications
+- using branches regularly and consistently
+- alert folks if you identify a bug in their code and are going to jump into fix it
+- establish Slack norms (ex. when to use private vs. public channels) at beginning of project
+
+*Stop Doing:*
+- not being in the same timezone/working on different schedules
+- working on the master branch
+- putting your JS, HTML, and CSS in the same file
+
+*Continue Doing:*
+- using Google Hangouts to interact face-to-face with team members
+- using data that is meaningful to us and we have some expertise in to provide context
+- helpfully taking a look at someone’s code and identifying issues
+- leveraging people (like Dhrumil) to get help when you need help, vs. going down a rabbit hole
+- being a good team and having an optimistic outlook
