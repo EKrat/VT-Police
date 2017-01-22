@@ -6,7 +6,7 @@ body{
 	background: #ddd url(../images/bg.jpg) repeat top left;
 	font-weight: 300;
 	font-size: 16px;
-	color: #888;
+	color: #777;
 	padding: 20px 20px 20px 20px;
 	-webkit-font-smoothing: antialiased;
 }
@@ -18,6 +18,10 @@ form {
   right: 10px;
 
 } 
+
+h1 {
+	color: #555;	
+}
 
 input {
   margin: 0 7px;
@@ -34,12 +38,12 @@ ul.nav {
     margin:0;
     padding:0;
     list-style:none;
-    height:36px; line-height:36px;
+    height:50px; line-height:50px;
     background:#3A0256; /* you can change the backgorund color here. */
     font-family: 'Lato', Arial, serif;
     font-weight: 700;
-    font-size:13px;
-    width: 1097px;
+    font-size:19px;
+    width: 1095px;
 }
 ul.nav li {
     border-right:1px solid #D3D3D3; /* you can change the border color matching to your background color */
@@ -47,7 +51,7 @@ ul.nav li {
 }
 ul.nav a {
     display:block;
-    padding:0 43px;
+    padding:0 48px;
     color: #FFFFFF;
     text-decoration:none;
 }
